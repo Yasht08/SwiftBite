@@ -1,0 +1,142 @@
+.signup-container {
+    display: flex;
+    height: 100vh;
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif; /* Add a default font family */
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Add a slight white overlay */
+}
+
+.logo-container img {
+    width: 450px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1)); /* Add a subtle shadow to the logo */
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* Increase padding for better spacing */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    backdrop-filter: blur(10px); /* Add a blur effect to the background */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 30px; /* Increase space below the heading */
+    font-size: 28px; /* Increase font size */
+    text-transform: uppercase; /* Capitalize the heading */
+    letter-spacing: 1px; /* Add letter spacing */
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+}
+
+input {
+    width: 100%;
+    padding: 12px; /* Increase padding */
+    margin: 15px 0; /* Increase space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Increase border radius */
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9); /* Increase opacity slightly */
+    transition: all 0.3s ease; /* Transition for all properties */
+}
+
+input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Increase shadow on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+button {
+    width: 100%;
+    padding: 14px; /* Increase padding */
+    margin: 20px 0; /* Increase space around buttons */
+    border: none;
+    border-radius: 8px; /* Increase border radius */
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase shadow */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px); /* Increase upward movement on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+button:active {
+    transform: translateY(-1px); /* Slight upward position when active */
+}
+
+p {
+    color: #ff3333; /* Brighter red for error messages */
+    text-align: center;
+    font-weight: bold; /* Make error messages bold */
+    margin-top: 10px; /* Add space above error messages */
+}
+
+.success-message {
+    color: #2ecc71; /* Brighter green for success messages */
+    font-weight: bold;
+    margin-bottom: 20px; /* Increase bottom margin */
+    background-color: rgba(46, 204, 113, 0.1); /* Light green background */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.3); /* Increase shadow for success */
+    margin: 30px 0; /* Increase space around success message */
+}
+
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+    }
+
+    .logo-container, .form-container {
+        flex: none;
+        width: 100%;
+    }
+
+    .logo-container img {
+        width: 200px;
+        margin: 20px 0; /* Add vertical margin for the logo */
+    }
+    
+    .form-container {
+        padding: 20px; /* Reduce padding on mobile */
+    }
+
+    button {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 24px; /* Reduce heading size on mobile */
+    }
+}
+
+/* Add smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}

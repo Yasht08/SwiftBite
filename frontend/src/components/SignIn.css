@@ -1,0 +1,46 @@
+.signup-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.logo-container {
+    flex: 1; /* Use flex to take up the left half */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    flex: 1; /* Right half for the sign-up form */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Optional: add padding */
+}
+
+form {
+    width: 100%; /* Full width for the form */
+    max-width: 400px; /* Max width for the form */
+    background: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background for better readability */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Space between buttons */
+    cursor: pointer;
+}
+
+p {
+    color: red; /* Error message color */
+}
