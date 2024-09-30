@@ -13,7 +13,7 @@
 
   // Middleware setup
   app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000', 'https://swift-bite.vercel.app'],
     credentials: true
   }));
 
